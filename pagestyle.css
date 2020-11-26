@@ -2,14 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #021C45;
+}
 
 a {
   color: #0353A4;
+  text-decoration: none;
+
 }
 a:hover {
-      color: #0353A4;
-      text-decoration: none;
-    }
+  color: #0353A4;
+  text-decoration: none;
+}
 
 p {
   color: #FFF;
@@ -795,8 +800,8 @@ figure.effect-sarah:hover p {
       width: calc(100% - 10px);
     }
 #what-i-do .container a {
-          color: $pink;
-          border-bottom: dotted 1px $pink;
+          color: #f54785;
+          border-bottom: dotted 1px #f54785;
           padding: 0 1px;
         }
 
@@ -818,7 +823,7 @@ figure.effect-sarah:hover p {
 
 #what-i-do .svg-inline--fa {
       font-size: 40px;
-      color: $white;
+      color: #FFF;
       margin-bottom: 12px;
     }
 
