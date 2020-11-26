@@ -1,6 +1,36 @@
 <!-- navbar -->
 <div id="navbar">
-  <%= render 'shared/navbar' %>
+  <div class="navbar navbar-expand-sm navbar-light navbar-portfolio">
+    <!-- burger to x -->
+    <div class="right-navbar burger-to-X">
+      <%= render 'shared/burger-to-X' %>
+    </div>
+
+    <!-- center -->
+    <div class="center-logo">
+      <%= render 'shared/logo' %>
+    </div>
+
+    <!-- right links---------------- -->
+    <div class="right-navbar extended-menu">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-button">
+            <span>
+              <%= link_to "Info", root_path( :anchor => "about-me" ) , class: "nav-link" %>
+            </span>
+          </li>
+          <li class="nav-button">
+            <span>
+              <%= link_to "Projets", root_path( :anchor => "portfolio" ) , class: "nav-link" %>
+            </span>
+          </li>
+            <%#= mail_to "laurentbinder@gmail.com", 'Mail' %>
+            <a href="mailto:laurentbinder@gmail.com" target="_blank"><i class="fa fa-envelope envelope"></i></a>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- banner -->
 <div id="ban" class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1515643395264-3f8c19a2dc77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1660&q=180);">
