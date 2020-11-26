@@ -1,3 +1,24 @@
+/* colors */
+// web site colors:
+$royal-blue: #964FAB;
+$dark-blue: #0353A4;
+$darkest-blue: #021C45;
+$star-blue: #007AB2;
+$light-blue: #C4E3FF;
+$violet: #773f88;
+
+// basics:
+$red: #FD1015;
+$blue: $royal-blue;
+$yellow: #FFC65A;
+$orange: #E67E22;
+$green: #1EDD88;
+$gray: #0E0000;
+$light-gray: #F4F4F4;
+$pink: #f54785;
+
+
+
 /*about me*/
 #about-me {
   text-align: center;
