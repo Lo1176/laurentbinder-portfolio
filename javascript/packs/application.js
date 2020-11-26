@@ -71,4 +71,4 @@ async function firstSlogan(){
 };
 
 
-firstSlogan();
+// firstSlogan();

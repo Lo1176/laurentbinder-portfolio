@@ -800,48 +800,48 @@ figure.effect-sarah:hover p {
       margin-right: 1px;
       vertical-align: middle;
       width: calc(100% - 10px);
-    }
+}
 #what-i-do .container a {
-          color: #f54785;
-          border-bottom: dotted 1px #f54785;
-          padding: 0 1px;
-        }
+  color: #f54785;
+  border-bottom: dotted 1px #f54785;
+  padding: 0 1px;
+}
 
 #what-i-do ul.icons-grid {
-      list-style: none;
-      padding: 0;
-      position: relative;
-    }
-#what-i-do ul.icons-grid li {
-          display: block;
-          float: left;
-          padding: 3em 0;
-          width: 50%;
-        }
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+#what-i-do  .icons-grid li {
+  display: block;
+  float: left;
+  padding: 3em 0;
+  width: 50%;
+}
 
 #what-i-do ul.icons-grid li:nth-child(2n + 1) {
-        box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
-    }
+  box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
+}
 
 #what-i-do .svg-inline--fa {
-      font-size: 40px;
-      color: #FFF;
-      margin-bottom: 12px;
-    }
+  font-size: 40px;
+  color: #FFF;
+  margin-bottom: 12px;
+}
 
 #what-i-do ul.icons-grid:after {
-        clear: both;
-        content: '';
-        display: block;
-    }
+    clear: both;
+    content: '';
+    display: block;
+}
 
 #what-i-do ul.icons-grid li:nth-child(2n + 3):before {
-        background: #dddddd;
-        content: '';
-        display: block;
-        height: 2px;
-        margin-top: -3em;
-        position: absolute;
-        width: 100%;
-    }
+    background: #dddddd;
+    content: '';
+    display: block;
+    height: 2px;
+    margin-top: -3em;
+    position: absolute;
+    width: 100%;
+}
 
