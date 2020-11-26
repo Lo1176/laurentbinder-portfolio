@@ -1,29 +1,33 @@
-/* colors */
-/*// web site colors:*/
-$royal-blue: #964FAB;
-$dark-blue: #0353A4;
-$darkest-blue: #021C45;
-$star-blue: #007AB2;
-$light-blue: #C4E3FF;
-$violet: #773f88;
+html {
+  scroll-behavior: smooth;
+}
 
-/*// basics:*/
-$red: #FD1015;
-$blue: $royal-blue;
-$yellow: #FFC65A;
-$orange: #E67E22;
-$green: #1EDD88;
-$gray: #0E0000;
-$light-gray: #F4F4F4;
-$pink: #f54785;
 
+a {
+  color: #0353A4;
+    &:hover {
+      color: #0353A4;
+      text-decoration: none;
+    }
+}
+
+p {
+  color: #FFF;
+}
+
+.container {
+  padding: 0 8vw;
+    p {
+      padding: 0 8vw;
+    }
+}
 
 
 /*about me*/
 #about-me {
   text-align: center;
     .svg-inline--fa {
-      color: $white;
+      color: #FFF;
       margin: 16px;
       font-size: 80px;
       opacity: 0.6;
@@ -45,7 +49,7 @@ $pink: #f54785;
   height: 80vh;
     .about-me .fa-chevron-down {
       opacity: 0.5;
-      color: $pink;
+      color: #f54785;
       font-size: 48px;
       /*
       // transform: rotate(90deg);
@@ -78,15 +82,10 @@ $pink: #f54785;
   letter-spacing: 4px;
 }
 
-#dev {
-  /*// color: $pink;
-  // opacity: 1;*/
-}
-
 .banner a {
-  color: $light-blue;
+  color: #C4E3FF;
     &:hover {
-      color: $white;
+      color: #FFF;
     }
 }
 
@@ -110,7 +109,7 @@ $pink: #f54785;
 .nav-icon:after,
 .nav-icon:before,
 .nav-icon .burger-menu {
-  background-color: $darkest-blue;
+  background-color: #021C45;
   border-radius: 3px;
   content: '';
   display: block;
@@ -138,7 +137,7 @@ $pink: #f54785;
     }
     .list-group-item {
       padding: 0;
-      background-color: $white;
+      background-color: #FFF;
     }
     button:focus {
       outline: none;
@@ -164,12 +163,12 @@ $pink: #f54785;
     }
     a {
     // padding-bottom: 20px;
-      color: $darkest-blue;
+      color: #021C45;
       // opacity: 0.6 !important;
       font-weight: 500;
 
         &:hover {
-          color: $darkest-blue !important;
+          color: #021C45 !important;
           // opacity: 1 !important;
           text-decoration: none;
           border-bottom: solid;
@@ -196,7 +195,7 @@ $pink: #f54785;
           height:0;
           position: absolute;
           transition: all 0.2s linear;
-          background: $darkest-blue;
+          background: #021C45;
         }
     }
 
@@ -206,7 +205,7 @@ $pink: #f54785;
       height: 2px;
       position: absolute;
       transition: all 0.2s linear;
-      background: $darkest-blue;
+      background: #021C45;
     }
 
     .nav-button:hover::before, .nav-button:hover::after{
@@ -243,7 +242,7 @@ $pink: #f54785;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: $darkest-blue;
+  color: #021C45;
   opacity: 0.6;
   padding: 8px 16px;
   text-align: center;
@@ -252,7 +251,7 @@ $pink: #f54785;
 
 
     &:hover {
-      color: $darkest-blue;
+      color: #021C45;
       opacity: 1;
     }
 
@@ -262,11 +261,11 @@ $pink: #f54785;
   text-align: center;
   width: 82px;
   height: 40px;
-  color: $darkest-blue;
+  color: #021C45;
   opacity: 0.9;
   padding: 8px 16px;
     &:hover {
-      color: $white;
+      color: #FFF;
       opacity: 1;
     }
 }
@@ -289,7 +288,7 @@ $pink: #f54785;
       min-height: 320px;
       max-width: 420px;
       margin: 8px;
-      color: $light-gray;
+      color: #F4F4F4;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
       display: grid;
       text-align: center;
@@ -404,7 +403,7 @@ $pink: #f54785;
 }
 
 .footer-links a {
-  color: $light-gray;
+  color: #F4F4F4;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
@@ -413,13 +412,13 @@ $pink: #f54785;
 
 .footer-links a:hover {
   opacity: 1;
-  color: $white;
+  color: #FFF;
 }
 
 .footer-copyright {
   margin-right: 2vw;
     .fa-heart {
-      color: $red;
+      color: #FD1015;
     }
 }
 
@@ -436,7 +435,7 @@ $pink: #f54785;
 /*---------------itype--------------*/
 /* Cursor */
 .ityped-cursor {
-  color: $white;
+  color: #FFF;
   font-size: 20px;
   opacity: 0.9;
   -webkit-animation: blink 0.3s infinite;
@@ -488,22 +487,22 @@ $pink: #f54785;
     text-align: center;
     font-size: 28px;
     position: relative;
-    background-color: $darkest-blue;
-      h3 {
-          background-color: $body-bg; /* Same as the parents Background */
+    background-color: #021C45;
+}
+.title-line h3 {
+          background-color: #0353A4; /* Same as the parents Background */
           width: auto;
           display: inline-block;
           z-index: 3;
           padding: 0 20px;
-          color: $light-gray;
+          color: #F4F4F4;
           position: relative;
           font-family: raleway;
           font-weight: lighter;
           margin: 0;
           letter-spacing: 4px;
-      }
-
 }
+
 
 .title-line:after {
     content: '';
@@ -513,7 +512,7 @@ $pink: #f54785;
     right: 6vw;
     left: 6vw;
     z-index: 1;
-    background: $light-gray;
+    background: #F4F4F4;
 }
 
 /*-------------moving letters----------*/
@@ -521,13 +520,13 @@ $pink: #f54785;
   position: relative;
   font-weight: 900;
   font-size: 4em;
-    h1 {
-      color: $darkest-blue;
+}
+.moving-letters h1 {
+      color: #021C45;
       font-weight: 300;
       text-transform: uppercase;
       padding-top: 12px;
       font-size: 32px;
-    }
 }
 
 .moving-letters .text-wrapper {
@@ -547,7 +546,7 @@ $pink: #f54785;
 
 #banner-logo {
     .moving-letters h1 {
-      color: $white;
+      color: #FFF;
       font-weight: 500;
       font-size: 38px;
       letter-spacing: 12px;
@@ -564,7 +563,7 @@ $pink: #f54785;
 
 .navbar-portfolio {
 /*  // bottom: 0;*/
-  background: $white;
+  background: #FFF;
   padding: 8px 24px;
   display: grid;
   justify-content: space-between;
@@ -719,7 +718,7 @@ $pink: #f54785;
 /*---------------*/
 
 figure.effect-sarah {
-  background: $darkest-blue;
+  background: #021C45;
   min-width: 420px;
   min-height: 260px;
   margin: 0 8px;
@@ -800,13 +799,13 @@ figure.effect-sarah:hover p {
   position: fixed;
   bottom: 80px;
   right: 20px;
-  background-color: $white;
+  background-color: #FFF;
   font-size: 36px;
   text-align: center;
-  color: $darkest-blue;
+  color: #021C45;
     &:hover {
-      background-color: $darkest-blue;
+      background-color: #021C45;
       opacity: 1;
-      color: $white;
+      color: #FFF;
     }
 }
