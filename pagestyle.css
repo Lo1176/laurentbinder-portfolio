@@ -554,3 +554,50 @@ $pink: #f54785;
     }
 
 }
+
+/*---------navbar-------*/
+#navbar {
+  /*// position: fixed;
+  // width: 100%;
+  // top: 0*/
+}
+
+.navbar-portfolio {
+/*  // bottom: 0;*/
+  background: $white;
+  padding: 8px 24px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 32vw 32vw 32vw;
+  grid-template-rows: 48px;
+  grid-template-areas: "gauche logo droite";
+}
+
+.navbar-portfolio .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-portfolio .navbar-brand img {
+  width: 40px;
+}
+
+.left-navbar {
+  grid-area: gauche;
+  justify-self: left;
+}
+
+.center-logo {
+  grid-area: logo;
+  text-align: center;
+}
+
+.right-navbar {
+  grid-area: droite;
+  justify-self: center;
+
+}
+
+.envelope {
+  align-self: center;
+  font-size: 24px;
+}
