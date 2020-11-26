@@ -601,3 +601,51 @@ $pink: #f54785;
   align-self: center;
   font-size: 24px;
 }
+
+/*-----------RESPONSIVE-----------*/
+@media (max-width: 912px) {
+  .navbar-portfolio h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .burger-to-X, #navbar {
+    display: none;
+  }
+
+
+}
+@media (max-width: 768px) {
+  .navbar-nav, #banner-logo {
+    display: none;
+  }
+  .navbar-portfolio {
+    grid-template-columns: 2vw 60vw 2vw;
+
+  }
+}
+@media (min-width: 560px) {
+  .small-devise {
+        display: none;
+      }
+}
+
+@media (max-width: 560px) {
+    // .small-devise {
+    //   display: inline-block;
+    // }
+    .large-devise {
+      display: none;
+    }
+    .container {
+      padding: 0 !important;
+    }
+
+    // .footer {
+    //   padding: 0 16px;
+    // }
+    html {
+      // scroll-behavior: auto !important;
+    }
+
+}
