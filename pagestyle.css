@@ -464,3 +464,54 @@ $pink: #f54785;
 }
 /*---------------itype--------------*/
 
+/*letterfx*/
+.letterfx-myfx-container{
+  overflow:hidden;
+}
+
+.letterfx-myfx-container .letterfx{
+  position:relative;
+}
+
+.letterfx-myfx-before{
+  left:0;
+}
+
+.letterfx-myfx-after{
+  left:10px;
+}
+
+/*line separation*/
+.title-line {
+    width: 100%;
+    margin: 4vh 0vw;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    background-color: $darkest-blue;
+      h3 {
+          background-color: $body-bg; /* Same as the parents Background */
+          width: auto;
+          display: inline-block;
+          z-index: 3;
+          padding: 0 20px;
+          color: $light-gray;
+          position: relative;
+          font-family: raleway;
+          font-weight: lighter;
+          margin: 0;
+          letter-spacing: 4px;
+      }
+
+}
+
+.title-line:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    right: 6vw;
+    left: 6vw;
+    z-index: 1;
+    background: $light-gray;
+}
