@@ -17,25 +17,24 @@ p {
 
 .container {
   padding: 0 8vw;
-    p {
-      padding: 0 8vw;
-    }
+}
+.container p {
+  padding: 0 8vw;
 }
 
 
 /*about me*/
 #about-me {
   text-align: center;
-    .svg-inline--fa {
+}
+#about-me .svg-inline--fa {
       color: #FFF;
       margin: 16px;
       font-size: 80px;
       opacity: 0.6;
     }
-    .text p {
-      letter-spacing: 1px;
-
-    }
+#about-me .text p {
+  letter-spacing: 1px;
 }
 
 /*banner*/
@@ -47,7 +46,8 @@ p {
   margin-bottom: 56px;
   text-align: center;
   height: 80vh;
-    .about-me .fa-chevron-down {
+}
+.banner .about-me .fa-chevron-down {
       opacity: 0.5;
       color: #f54785;
       font-size: 48px;
@@ -60,10 +60,9 @@ p {
       // -moz-transform: rotate(90deg);
       */
     }
-    .about-me .fa-chevron-down:hover {
+.banner .about-me .fa-chevron-down:hover {
       opacity: 1;
     }
-}
 
 .banner h1 {
   margin-bottom: 16px;
@@ -98,13 +97,12 @@ p {
 .nav-icon {
   margin: 0;
   width: 32px;
-  // height: 32px;
   margin-right: 10px;
-    .burger-menu {
+}
+.nav-icon .burger-menu {
       margin-right: 10px !important;
     }
 
-}
 
 .nav-icon:after,
 .nav-icon:before,
@@ -116,7 +114,6 @@ p {
   height: 2px;
   margin: 10px 0;
   transition: all .2s ease-in-out;
-  // margin-right: 10px;
 }
 
 .show .nav-icon:before {
@@ -131,75 +128,65 @@ p {
   transform: scale(0);
 }
 
-.burger-to-X {
-    .list-group-item:first-child {
-      border: none;
-    }
-    .list-group-item {
-      padding: 0;
-      background-color: #FFF;
-    }
-    button:focus {
-      outline: none;
-    }
-    .btn-group, .btn-group-vertical {
-      vertical-align: baseline;
-      display: contents;
-    }
-    .dropdown-item {
-      padding: 16px;
-    }
+.burger-to-X .list-group-item:first-child {
+  border: none;
+}
+.burger-to-X .list-group-item {
+  padding: 0;
+  background-color: #FFF;
+}
+.burger-to-X button:focus {
+  outline: none;
+}
+.burger-to-X .btn-group, .btn-group-vertical {
+  vertical-align: baseline;
+  display: contents;
+}
+.burger-to-X .dropdown-item {
+  padding: 16px;
+}
 
-    .dropdown-menu.show{
-      display: grid;
-      justify-content: center;
-      padding: 16px;
-      // text-align: center;
-      width: 100%;
-      border: none;
-      top: auto;
-      background-color: #fffdff;
-
-    }
-    a {
-    // padding-bottom: 20px;
-      color: #021C45;
-      // opacity: 0.6 !important;
-      font-weight: 500;
-
-        &:hover {
-          color: #021C45 !important;
-          // opacity: 1 !important;
-          text-decoration: none;
-          border-bottom: solid;
-          transition-duration: 0.2s;
-          transition: all .1s ease-in-out;
-        }
-
-    }
+.burger-to-X .dropdown-menu.show{
+  display: grid;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  top: auto;
+  background-color: #fffdff;
+}
+.burger-to-X a {
+  color: #021C45;
+  font-weight: 500;
+}
+.burger-to-X a &:hover {
+  color: #021C45 !important;
+  text-decoration: none;
+  border-bottom: solid;
+  transition-duration: 0.2s;
+  transition: all .1s ease-in-out;
 }
 
 /*button navbar*/
-.navbar-light .navbar-nav {
-    .nav-button {
-      background: none;
-      background: rgba(0,0,0,0.03);
-      display: inline-block;
-      position: relative;
-      border: none;
-      cursor: pointer;
-      margin: 0 16px;
-        span::before, span::after{
-          content:"";
-          width:2px;
-          height:0;
-          position: absolute;
-          transition: all 0.2s linear;
-          background: #021C45;
-        }
-    }
+.navbar-light .navbar-nav .nav-button {
+  background: none;
+  background: rgba(0,0,0,0.03);
+  display: inline-block;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  margin: 0 16px;
+}
+.navbar-light .navbar-nav .nav-button span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #021C45;
+}
 
-    .nav-button::before, .nav-button::after{
+.navbar-light .navbar-nav .nav-button::before, .nav-button::after{
       content:"";
       width: 0;
       height: 2px;
@@ -208,38 +195,36 @@ p {
       background: #021C45;
     }
 
-    .nav-button:hover::before, .nav-button:hover::after{
+.navbar-light .navbar-nav .nav-button:hover::before, .nav-button:hover::after{
       width: 100%; /*// always there*/
       left: 0;
     }
-    .nav-button:hover span::before, .nav-button:hover span::after{
+.navbar-light .navbar-nav .nav-button:hover span::before, .nav-button:hover span::after{
       height: 100%; /* // always there*/
       top: 0;
     }
 
-    .nav-button::before{
+.navbar-light .navbar-nav .nav-button::before{
       left: 0;
       top: 0;
       transition-duration: 0.3s;
     }
-    .nav-button::after{
+.navbar-light .navbar-nav .nav-button::after{
       right: 0;
       bottom: 0;
       transition-duration: 0.3s;
     }
 
-    .nav-button span::before{
+.navbar-light .navbar-nav .nav-button span::before{
       left: 0;
       top: 0;
       transition-duration: 0.3s;
     }
-    .nav-button span::after{
+.navbar-light .navbar-nav .nav-button span::after{
       right: 0;
       bottom: 0;
       transition-duration: 0.3s;
     }
-
-}
 
 .navbar-light .navbar-nav .nav-link {
   color: #021C45;
@@ -248,14 +233,13 @@ p {
   text-align: center;
   width: 82px;
   height: 40px;
+}
 
-
-    &:hover {
+.navbar-light .navbar-nav .nav-link &:hover {
       color: #021C45;
       opacity: 1;
     }
 
-}
 
 .navbar-light a {
   text-align: center;
@@ -264,11 +248,12 @@ p {
   color: #021C45;
   opacity: 0.9;
   padding: 8px 16px;
+}
+.navbar-light a {
     &:hover {
       color: #FFF;
       opacity: 1;
     }
-}
 
 /*card area*/
 .card-area {
@@ -281,9 +266,9 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0px 12px;
+}
 
-
-    .card-portfolio {
+.container-portfolio .card-portfolio {
       min-width: auto;
       min-height: 320px;
       max-width: 420px;
@@ -294,17 +279,17 @@ p {
       text-align: center;
       align-items: center;
       transition: 0.3s;
-        h4 {
+    }
+.container-portfolio .card-portfolio h4 {
           font-size: 24px;
           margin-bottom: 16px;
           margin-top: 4px;
         }
-        p {
+.container-portfolio .card-portfolio p {
           font-size: 16px;
         }
-      }
 
-      .portfolio-end p {
+.container-portfolio .card-portfolio .portfolio-end p {
         margin-bottom: 4px;
       }
 
