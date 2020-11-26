@@ -3,7 +3,23 @@
   <div class="navbar navbar-expand-sm navbar-light navbar-portfolio">
     <!-- burger to x -->
     <div class="right-navbar burger-to-X">
-      <%= render 'shared/burger-to-X' %>
+      <div class="btn-group">
+        <button type="button" class="list-group-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <!-- test burger to X moving-->
+          <div class="nav-icon">
+            <div class="burger-menu">
+            </div>
+          </div>
+        </button>
+        <div class="dropdown-menu">
+
+              <%= link_to "Info", root_path( :anchor => "about-me" ) %>
+
+              <%= link_to "Projets", root_path( :anchor => "portfolio" ) %>
+
+              <a href="mailto:laurentbinder@gmail.com" target="_blank"><i class="far fa-envelope envelope "></i></a>
+        </div>
+      </div>
     </div>
 
     <!-- center -->
