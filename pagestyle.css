@@ -1,0 +1,73 @@
+/*about me*/
+#about-me {
+  text-align: center;
+    .svg-inline--fa {
+      color: $white;
+      margin: 16px;
+      font-size: 80px;
+      opacity: 0.6;
+    }
+    .text p {
+      letter-spacing: 1px;
+
+    }
+}
+
+/*banner*/
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 200px 0;
+  margin-bottom: 56px;
+  text-align: center;
+  height: 80vh;
+    .about-me .fa-chevron-down {
+      opacity: 0.5;
+      color: $pink;
+      font-size: 48px;
+      // transform: rotate(90deg);
+      // /* Safari */
+      // -webkit-transform: rotate(90deg);
+
+      // /* Firefox */
+      // -moz-transform: rotate(90deg);
+    }
+    .about-me .fa-chevron-down:hover {
+      opacity: 1;
+    }
+}
+
+.banner h1 {
+  margin-bottom: 16px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 48px;
+  font-weight: bold;
+  font-family: $banner-font;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .9;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  letter-spacing: 4px;
+}
+
+#dev {
+  // color: $pink;
+  // opacity: 1;
+}
+
+.banner a {
+  color: $light-blue;
+    &:hover {
+      color: $white;
+    }
+}
+
+.container-banner-title {
+  height: 10vh;
+  letter-spacing: 8px;
+}
