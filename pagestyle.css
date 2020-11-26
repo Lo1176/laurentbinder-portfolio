@@ -470,7 +470,7 @@ p {
     background-color: #021C45;
 }
 .title-line h3 {
-          background-color: #0353A4; /* Same as the parents Background */
+          background-color: #021C45; /* Same as the parents Background */
           width: auto;
           display: inline-block;
           z-index: 3;
@@ -782,3 +782,59 @@ figure.effect-sarah:hover p {
       opacity: 1;
       color: #FFF;
 }
+
+/*What I do*/
+#what-i-do {
+  text-align: center;
+  position: relative;
+}
+#what-i-do .container {
+      display: inline-block;
+      margin-right: 1px;
+      vertical-align: middle;
+      width: calc(100% - 10px);
+    }
+#what-i-do .container a {
+          color: $pink;
+          border-bottom: dotted 1px $pink;
+          padding: 0 1px;
+        }
+
+#what-i-do ul.icons-grid {
+      list-style: none;
+      padding: 0;
+      position: relative;
+    }
+#what-i-do ul.icons-grid li {
+          display: block;
+          float: left;
+          padding: 3em 0;
+          width: 50%;
+        }
+
+#what-i-do ul.icons-grid li:nth-child(2n + 1) {
+        box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
+    }
+
+#what-i-do .svg-inline--fa {
+      font-size: 40px;
+      color: $white;
+      margin-bottom: 12px;
+    }
+
+#what-i-do ul.icons-grid:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+
+#what-i-do ul.icons-grid li:nth-child(2n + 3):before {
+        background: #dddddd;
+        content: '';
+        display: block;
+        height: 2px;
+        margin-top: -3em;
+        position: absolute;
+        width: 100%;
+    }
+
