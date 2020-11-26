@@ -432,3 +432,35 @@ $pink: #f54785;
       color: rgba(255,255,255,0.7);
     }
 }
+
+/*---------------itype--------------*/
+/* Cursor */
+.ityped-cursor {
+  color: $white;
+  font-size: 20px;
+  opacity: 0.9;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+/*---------------itype--------------*/
+
