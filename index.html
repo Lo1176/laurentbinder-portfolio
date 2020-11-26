@@ -6,9 +6,8 @@
     <title>Laurent Binder</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
-    <link rel="stylesheet" type="text/css" href="pagestyle.css">
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <link rel="stylesheet" href="pagestyle.css">
+
     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
@@ -29,9 +28,9 @@
             </button>
             <div class="dropdown-menu">
 
-                  <%= link_to "Info", root_path( :anchor => "about-me" ) %>
+                  <a href="#about-me">Info</a>
 
-                  <%= link_to "Projets", root_path( :anchor => "portfolio" ) %>
+                  <a href="#portfolio">Projets</a>
 
                   <a href="mailto:laurentbinder@gmail.com" target="_blank"><i class="far fa-envelope envelope "></i></a>
             </div>
@@ -42,21 +41,18 @@
         <div class="center-logo">
           <div id="mvlt">
             <div class="moving-letters flex-start" type="submit">
- <!-- link -->
-              <%= link_to root_path, remote: true do %>
-
+              <a href="#">
                 <h1>
                   <span class="text-wrapper">
                     <span class="letters">Laurent Binder</span>
                   </span>
                 </h1>
-
-              <% end %>
+              </a>
             </div>
 
           </div>
 
-<!-- script -->
+<!-- script moving-letters -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         </div>
 
@@ -66,15 +62,14 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-button">
                 <span>
-                  <%= link_to "Info", root_path( :anchor => "about-me" ) , class: "nav-link" %>
+                  <a class="nav-link" href="#about-me">Info</a>
                 </span>
               </li>
               <li class="nav-button">
                 <span>
-                  <%= link_to "Projets", root_path( :anchor => "portfolio" ) , class: "nav-link" %>
+                  <a class="nav-link" href="#portfolio">Projets</a>
                 </span>
               </li>
-                <%#= mail_to "laurentbinder@gmail.com", 'Mail' %>
                 <a href="mailto:laurentbinder@gmail.com" target="_blank"><i class="fa fa-envelope envelope"></i></a>
             </ul>
           </div>
@@ -85,7 +80,11 @@
     <div id="ban" class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1515643395264-3f8c19a2dc77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1660&q=180);">
       <div class="container-banner-title">
         <div id="banner-logo">
-          <%= render 'shared/logo', remote: true %>
+          <h1>
+            <span class="text-wrapper">
+              <span class="letters">Laurent Binder</span>
+            </span>
+          </h1>
         </div>
         <h1>Full-Stack Web Developer</h1>
         <p>Création de sites Web <span id="dev"></span></p>
