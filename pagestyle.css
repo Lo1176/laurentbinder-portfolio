@@ -5,11 +5,11 @@ html {
 
 a {
   color: #0353A4;
-    &:hover {
+}
+a:hover {
       color: #0353A4;
       text-decoration: none;
     }
-}
 
 p {
   color: #FFF;
@@ -28,11 +28,11 @@ p {
   text-align: center;
 }
 #about-me .svg-inline--fa {
-      color: #FFF;
-      margin: 16px;
-      font-size: 80px;
-      opacity: 0.6;
-    }
+  color: #FFF;
+  margin: 16px;
+  font-size: 80px;
+  opacity: 0.6;
+}
 #about-me .text p {
   letter-spacing: 1px;
 }
@@ -48,21 +48,21 @@ p {
   height: 80vh;
 }
 .banner .about-me .fa-chevron-down {
-      opacity: 0.5;
-      color: #f54785;
-      font-size: 48px;
-      /*
-      // transform: rotate(90deg);
-      // Safari
-      // -webkit-transform: rotate(90deg);
+  opacity: 0.5;
+  color: #f54785;
+  font-size: 48px;
+  /*
+  // transform: rotate(90deg);
+  // Safari
+  // -webkit-transform: rotate(90deg);
 
-      // Firefox
-      // -moz-transform: rotate(90deg);
-      */
-    }
+  // Firefox
+  // -moz-transform: rotate(90deg);
+  */
+}
 .banner .about-me .fa-chevron-down:hover {
-      opacity: 1;
-    }
+  opacity: 1;
+}
 
 .banner h1 {
   margin-bottom: 16px;
@@ -70,7 +70,7 @@ p {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 48px;
   font-weight: bold;
-  font-family: $banner-font;
+  font-family: Raleway;
 }
 
 .banner p {
@@ -83,9 +83,9 @@ p {
 
 .banner a {
   color: #C4E3FF;
-    &:hover {
-      color: #FFF;
-    }
+}
+.banner a:hover {
+  color: #FFF;
 }
 
 .container-banner-title {
@@ -100,8 +100,8 @@ p {
   margin-right: 10px;
 }
 .nav-icon .burger-menu {
-      margin-right: 10px !important;
-    }
+  margin-right: 10px !important;
+}
 
 
 .nav-icon:after,
@@ -146,7 +146,7 @@ p {
   padding: 16px;
 }
 
-.burger-to-X .dropdown-menu.show{
+.burger-to-X .dropdown-menu.show {
   display: grid;
   justify-content: center;
   padding: 16px;
@@ -159,7 +159,7 @@ p {
   color: #021C45;
   font-weight: 500;
 }
-.burger-to-X a &:hover {
+.burger-to-X a:hover {
   color: #021C45 !important;
   text-decoration: none;
   border-bottom: solid;
@@ -177,7 +177,7 @@ p {
   cursor: pointer;
   margin: 0 16px;
 }
-.navbar-light .navbar-nav .nav-button span::before, span::after{
+.navbar-light .navbar-nav .nav-button span::before, span::after {
   content:"";
   width:2px;
   height:0;
@@ -186,45 +186,45 @@ p {
   background: #021C45;
 }
 
-.navbar-light .navbar-nav .nav-button::before, .nav-button::after{
-      content:"";
-      width: 0;
-      height: 2px;
-      position: absolute;
-      transition: all 0.2s linear;
-      background: #021C45;
-    }
+.navbar-light .navbar-nav .nav-button::before, .nav-button::after {
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #021C45;
+}
 
-.navbar-light .navbar-nav .nav-button:hover::before, .nav-button:hover::after{
-      width: 100%; /*// always there*/
-      left: 0;
-    }
-.navbar-light .navbar-nav .nav-button:hover span::before, .nav-button:hover span::after{
-      height: 100%; /* // always there*/
-      top: 0;
-    }
+.navbar-light .navbar-nav .nav-button:hover::before, .nav-button:hover::after {
+  width: 100%; /*// always there*/
+  left: 0;
+}
+.navbar-light .navbar-nav .nav-button:hover span::before, .nav-button:hover span::after {
+  height: 100%; /* // always there*/
+  top: 0;
+}
 
-.navbar-light .navbar-nav .nav-button::before{
-      left: 0;
-      top: 0;
-      transition-duration: 0.3s;
-    }
-.navbar-light .navbar-nav .nav-button::after{
-      right: 0;
-      bottom: 0;
-      transition-duration: 0.3s;
-    }
+.navbar-light .navbar-nav .nav-button::before {
+  left: 0;
+  top: 0;
+  transition-duration: 0.3s;
+}
+.navbar-light .navbar-nav .nav-button::after {
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.3s;
+}
 
-.navbar-light .navbar-nav .nav-button span::before{
-      left: 0;
-      top: 0;
-      transition-duration: 0.3s;
-    }
-.navbar-light .navbar-nav .nav-button span::after{
-      right: 0;
-      bottom: 0;
-      transition-duration: 0.3s;
-    }
+.navbar-light .navbar-nav .nav-button span::before {
+  left: 0;
+  top: 0;
+  transition-duration: 0.3s;
+}
+.navbar-light .navbar-nav .nav-button span::after {
+  right: 0;
+  bottom: 0;
+  transition-duration: 0.3s;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: #021C45;
@@ -235,10 +235,10 @@ p {
   height: 40px;
 }
 
-.navbar-light .navbar-nav .nav-link &:hover {
-      color: #021C45;
-      opacity: 1;
-    }
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #021C45;
+  opacity: 1;
+}
 
 
 .navbar-light a {
@@ -249,8 +249,8 @@ p {
   opacity: 0.9;
   padding: 8px 16px;
 }
-.navbar-light a {
-    &:hover {
+
+.navbar-light a:hover {
       color: #FFF;
       opacity: 1;
     }
@@ -407,7 +407,7 @@ p {
   opacity: 0.15;
   text-decoration: none;
 }
-.footer-link-credit a &:hover {
+.footer-link-credit a:hover {
       opacity: 1;
       color: rgba(255,255,255,0.7);
     }
@@ -777,7 +777,7 @@ figure.effect-sarah:hover p {
   text-align: center;
   color: #021C45;
 }
-.scrollup &:hover {
+.scrollup:hover {
       background-color: #021C45;
       opacity: 1;
       color: #FFF;
