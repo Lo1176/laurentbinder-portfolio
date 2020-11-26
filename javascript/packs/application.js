@@ -30,7 +30,6 @@ const initLetters = () => {
       delay: 1000
     });
 }
-
 initLetters();
 
 // When the user scrolls down 400px from the top of the document, it shows the scroll button
@@ -39,18 +38,16 @@ function scrollFunction() {
   const state = document.documentElement.scrollTop > 400;
   document.querySelector('.scrollup').style.display = state ? 'block' : 'none';
 };
-
 scrollFunction();
 
 // text in banner get opacit when scroll down
 const initOpacity = () => {
   $(document).ready(function(){
     $(window).scroll(function(){
-      $('#ban').css("opacity", 1 - $(window).scrollTop()/400)
+      $('#ban').css("opacity", 1 - $(window).scrollTop()/700)
     })
   })
 };
-
 initOpacity();
 
 // letterfx is not working
