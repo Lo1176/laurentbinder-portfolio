@@ -42,7 +42,16 @@ function scrollFunction() {
 
 scrollFunction();
 
-// initOpacity();
+// text in banner get opacit when scroll down
+const initOpacity = () => {
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      $('#ban').css("opacity", 1 - $(window).scrollTop()/400)
+    })
+  })
+};
+
+initOpacity();
 
 // letterfx is not working
 // $("#tagline").letterfx({"fx":"fly-right fly-bottom spin"});
