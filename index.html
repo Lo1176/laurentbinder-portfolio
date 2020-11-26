@@ -1,1 +1,111 @@
-Hello World
+<!-- navbar -->
+<div id="navbar">
+  <%= render 'shared/navbar' %>
+</div>
+<!-- banner -->
+<div id="ban" class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1515643395264-3f8c19a2dc77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1660&q=180);">
+  <div class="container-banner-title">
+    <div id="banner-logo">
+      <%= render 'shared/logo', remote: true %>
+    </div>
+    <h1>Full-Stack Web Developer</h1>
+    <p>Création de sites Web <span id="dev"></span></p>
+    <a class="about-me" href="#about-me"><i class="fas fa-chevron-down"></i></a>
+  </div>
+</div>
+
+<div class="">
+
+  <!-- about-me -->
+  <div id="about-me" class="container pb-5">
+    <div class="title-line"><h3>A propos</h3></div>
+    <div class="text">
+      <p>Après avoir obtenu mon diplôme d’ingénieur du son à l'école Scaenica à Montpellier, je suis rentré dans un grand studio Parisien, le studio Ferber à Paris, en 2000.</p>
+
+      <p>Très vite on m'a confié des projets de grandes envergures pour Universal, Barclay ou Sony... avec des artistes de renommées comme Benjamin Biolay, Raphaël...</p>
+
+      <p>Après 8 ans au studio Ferber, j'ai décidé d'être à mon compte pour continuer à évoluer et être d'avantage maître de mes projets (Zaz, Charlie Winston, Carla Bruni...).</p>
+      <p>Comme vous le savez, l'industrie du disque est en plein changement. C'est pour cette raison que je me suis réorienté grâce à l'école Le Wagon - Paris en 2020 pour devenir Full stack dévelopeur et ainsi participer au changement numérique.</p>
+
+      <p>Je suis volontaire, calme et dynamique. J'aime travailler en équipe et être autonome. J'aime coder et j'aime la montagne !</p>
+
+      <!-- <p>Au plaisir de vous rencontrer</p> -->
+      <!-- <i class="fa fa-mountain"></i> -->
+    </div>
+
+
+  </div>
+  <!-- what I do -->
+  <div id="what-i-do">
+    <div class="container">
+      <div class="title-line"><h3>Mes techniques</h3></div>
+      <p>Ma stack technique inclut Ruby on Rails, React.js, HTML5, CSS, SQL Databases, et le CMS Wordpess. Retrouvez moi sur <a href="https://github.com/Lo1176" target="_blank">GitHub</a> ou envoyez moi un <a href="mailto:laurentbinder@gmail.com" target="_blank">mail</a> pour me présenter vos projets</p>
+      <ul class="icons-grid py-5">
+        <li>
+          <span class="fas fa-laptop"></span>
+          <p>Design Web Responsive</p>
+        </li>
+        <li>
+          <span class="fas fa-code"></span>
+          <p>Back-end Développeur</p>
+        </li>
+        <li>
+          <span class="fas fa-code-branch"></span>
+          <p>DevOps</p>
+        </li>
+        <li>
+          <span class="fas fa-palette"></span>
+          <p>Front-end Développeur</p>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+  <!-- portfolio -->
+  <div id="portfolio">
+    <div class="card-area mt-5">
+      <div class="container">
+        <div class="title-line"><h3>Projets</h3></div>
+
+      </div>
+
+      <div class="container-portfolio pb-5">
+  <!-- sarah fx -->
+        <a href="https://www.proximart.site/" target="_blank">
+          <figure class="effect-sarah card-portfolio card-img col-xs-10 col-sm-10 col-md-5 col-lg-4 col-xl-4">
+            <%= image_tag "img-c.png", alt: "img-c", class: "img-size" %>
+            <figcaption>
+              <h2><span>Proximart</span></h2>
+              <p>Trouvez une exposition près de chez vous</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="http://kiddo-hatha-website.herokuapp.com/" target="_blank">
+          <figure class="effect-sarah card-portfolio card-img col-xs-10 col-sm-10 col-md-5 col-lg-4 col-xl-4">
+            <%= image_tag "img-b.png", alt: "img-b" %>
+            <figcaption>
+              <h2>Yoga <span>Hatha</span></h2>
+              <p>Un site web pour enseigner le Yoga</p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="https://cocktailsappwagonlo1176.herokuapp.com/" target="_blank">
+          <figure class="effect-sarah card-portfolio card-img col-xs-10 col-sm-10 col-md-5 col-lg-4 col-xl-4">
+            <%= image_tag "img-a.png", alt: "img-a" %>
+            <figcaption>
+              <h2>Pimp my <span>Cocktails</span></h2>
+              <p>Save and customise your coktails</p>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= render 'shared/footer' %>
+<%= render 'shared/scrollup' %>
