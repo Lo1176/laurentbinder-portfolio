@@ -17,23 +17,18 @@
     <div id="navbar">
       <div class="navbar navbar-expand-sm navbar-light navbar-portfolio">
         <!-- burger to x -->
+
         <div class="right-navbar burger-to-X">
-          <div class="btn-group">
-            <button type="button" class="list-group-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <!-- test burger to X moving-->
-              <div class="nav-icon">
-                <div class="burger-menu">
-                </div>
-              </div>
-            </button>
-            <div class="dropdown-menu">
-
-                  <a href="#about-me">Info</a>
-
-                  <a href="#portfolio">Projets</a>
-
-                  <a href="mailto:laurentbinder@gmail.com" target="_blank"><i class="far fa-envelope envelope "></i></a>
-            </div>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          <ul id="menu">
+            <li class="nav-item"><a href="#about-me">Info</a></li>
+            <li class="nav-item"><a href="#portfolio">Projets</a></li>
+            <li class="nav-item"><a href="mailto:laurentbinder@gmail.com" target="_blank"><i class="far fa-envelope envelope "></i></a></li>
+          </ul>
           </div>
         </div>
 
@@ -80,11 +75,15 @@
     <div id="ban" class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1515643395264-3f8c19a2dc77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1660&q=180);">
       <div class="container-banner-title">
         <div id="banner-logo">
-          <h1>
-            <span class="text-wrapper">
-              <span class="letters">Laurent Binder</span>
-            </span>
-          </h1>
+          <div id="mvlt">
+            <div class="moving-letters flex-start" type="submit">
+              <h1>
+                <span class="text-wrapper">
+                  <span class="letters">Laurent Binder</span>
+                </span>
+              </h1>
+            </div>
+          </div>
         </div>
         <h1>Full-Stack Web Developer</h1>
         <p>Création de sites Web <span id="dev"></span></p>

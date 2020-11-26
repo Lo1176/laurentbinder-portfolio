@@ -8,6 +8,9 @@ body {
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 
+h1, h2, h3, h4, p {
+  font-family: "Raleway", "Helvetica", "sans-serif";
+}
 a {
   color: #0353A4;
   text-decoration: none;
@@ -77,7 +80,6 @@ p {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 48px;
   font-weight: bold;
-  font-family: Raleway;
 }
 
 .banner p {
@@ -100,81 +102,126 @@ p {
   letter-spacing: 8px;
 }
 
-/*burger-to-x*/
-.nav-icon {
-  margin: 0;
-  width: 32px;
-  margin-right: 10px;
-}
-.nav-icon .burger-menu {
-  margin-right: 10px !important;
-}
-
-
-.nav-icon:after,
-.nav-icon:before,
-.nav-icon .burger-menu {
-  background-color: #021C45;
-  border-radius: 3px;
-  content: '';
+/*NEW BURGER TO X -----START--*/
+#menuToggle {
   display: block;
-  height: 2px;
-  margin: 10px 0;
-  transition: all .2s ease-in-out;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.show .nav-icon:before {
-  transform: translateY(12px) rotate(135deg);
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
 }
 
-.show .nav-icon:after {
-  transform: translateY(-12px) rotate(-135deg);
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #021C45;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
-.show .nav-icon div {
-  transform: scale(0);
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
 }
 
-.burger-to-X .list-group-item:first-child {
-  border: none;
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
 }
-.burger-to-X .list-group-item {
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: $blue;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 125px 32px 16px 32px;
+  border-radius: 2px;
+  right: -80px;
+
+  background: #FFF;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu .nav-link {
   padding: 0;
-  background-color: #FFF;
-}
-.burger-to-X button:focus {
-  outline: none;
-}
-.burger-to-X .btn-group, .btn-group-vertical {
-  vertical-align: baseline;
-  display: contents;
-}
-.burger-to-X .dropdown-item {
-  padding: 16px;
 }
 
-.burger-to-X .dropdown-menu.show {
-  display: grid;
-  justify-content: center;
-  padding: 16px;
-  width: 100%;
-  border: none;
-  top: auto;
-  background-color: #fffdff;
-}
-.burger-to-X a {
-  color: #021C45;
-  font-weight: 500;
-}
-.burger-to-X a:hover {
-  color: #021C45 !important;
-  text-decoration: none;
-  border-bottom: solid;
-  transition-duration: 0.2s;
-  transition: all .1s ease-in-out;
+#menu a:hover {
+  text-decoration: underline !important;
 }
 
-/*button navbar*/
+#menu li {
+  padding: 2px 0;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+}
+/* NEW BURGER TO X -----END--*/
+
+/*button navbar */ /* NOT USED ANYMORE */
 .navbar-light .navbar-nav .nav-button {
   background: none;
   background: rgba(0,0,0,0.03);
@@ -321,7 +368,6 @@ p {
 .container-portfolio .card-portfolio .card-img:hover {
         background-position: inherit;
       }
-
 
 #show-details {
   text-align: left;
@@ -484,7 +530,6 @@ p {
           padding: 0 20px;
           color: #F4F4F4;
           position: relative;
-          font-family: raleway;
           font-weight: lighter;
           margin: 0;
           letter-spacing: 4px;
@@ -531,14 +576,11 @@ p {
   transform-origin: 0 0;
 }
 
-#banner-logo {
-    .moving-letters h1 {
+#banner-logo .moving-letters h1 {
       color: #FFF;
       font-weight: 500;
       font-size: 38px;
       letter-spacing: 12px;
-    }
-
 }
 
 /*---------navbar-------*/
@@ -619,7 +661,6 @@ p {
 }
 
 /*----------sarah---------*/
-
 /* Common style */
 .container-portfolio figure {
   position: relative;
@@ -801,7 +842,7 @@ figure.effect-sarah:hover p {
       vertical-align: middle;
       width: calc(100% - 10px);
 }
-#what-i-do .container a {
+#what-i-do a {
   color: #f54785;
   border-bottom: dotted 1px #f54785;
   padding: 0 1px;
