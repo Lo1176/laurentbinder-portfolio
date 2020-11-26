@@ -293,47 +293,46 @@ p {
         margin-bottom: 4px;
       }
 
-      .img-a {
+.container-portfolio .card-portfolio .img-a {
         background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-a.png");
 
       }
 
-      .img-b {
+.container-portfolio .card-portfolio .img-b {
         background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-b.png");
       }
 
-      .img-c {
+.container-portfolio .card-portfolio .img-c {
         background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-c.png");
       }
 
-      .card-img {
+.container-portfolio .card-portfolio .card-img {
         background-size: cover;
         background-position: center;
       }
 
-      .card-img:hover {
+.container-portfolio .card-portfolio .card-img:hover {
         background-position: inherit;
       }
-
-}
 
 
 #show-details {
   text-align: left;
   padding: 0 32px;
-    h2 {
+}
+#show-details h2 {
       word-spacing: -0.15em;
       text-transform: capitalize;
       font-weight: 300;
       border-bottom: solid 3px white;
       padding: 8px 0;
     }
-    h2 span {
+#show-details h2 span {
       text-transform: uppercase;
       font-weight: 800;
       letter-spacing: 2px;
     }
-    .details p {
+#show-details .details p {
       opacity: 0;
       transition: opacity 0.35s, transform 0.35s;
       transform: translate3d(100%,0,0);
@@ -341,20 +340,16 @@ p {
       letter-spacing: 1px;
       font-size: 68.5%;
       text-transform: uppercase;
-
-      h2, p {
+}
+#show-details h2, p {
         margin: 0;
       }
-}
 
-}
 
-#show-details:hover {
-    .details p {
+#show-details:hover .details p {
       opacity: 1;
       transform: translate3d(0,0,0);
     }
-}
 
 /*details letters*/
 .details-letters {
@@ -402,20 +397,20 @@ p {
 
 .footer-copyright {
   margin-right: 2vw;
-    .fa-heart {
+}
+.footer-copyright .fa-heart {
       color: #FD1015;
     }
-}
 
 .footer-link-credit a {
   color: rgba(244, 244, 244, 0.3);
   opacity: 0.15;
   text-decoration: none;
-    &:hover {
+}
+.footer-link-credit a &:hover {
       opacity: 1;
       color: rgba(255,255,255,0.7);
     }
-}
 
 /*---------------itype--------------*/
 /* Cursor */
@@ -540,11 +535,6 @@ p {
 }
 
 /*---------navbar-------*/
-#navbar {
-  /*// position: fixed;
-  // width: 100%;
-  // top: 0*/
-}
 
 .navbar-portfolio {
 /*  // bottom: 0;*/
@@ -596,8 +586,6 @@ p {
   .burger-to-X, #navbar {
     display: none;
   }
-
-
 }
 @media (max-width: 768px) {
   .navbar-nav, #banner-logo {
@@ -788,9 +776,9 @@ figure.effect-sarah:hover p {
   font-size: 36px;
   text-align: center;
   color: #021C45;
-    &:hover {
+}
+.scrollup &:hover {
       background-color: #021C45;
       opacity: 1;
       color: #FFF;
-    }
 }
