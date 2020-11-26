@@ -631,21 +631,10 @@ $pink: #f54785;
 }
 
 @media (max-width: 560px) {
-    // .small-devise {
-    //   display: inline-block;
-    // }
     .large-devise {
       display: none;
     }
     .container {
       padding: 0 !important;
     }
-
-    // .footer {
-    //   padding: 0 16px;
-    // }
-    html {
-      // scroll-behavior: auto !important;
-    }
-
 }
