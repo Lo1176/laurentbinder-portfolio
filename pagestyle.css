@@ -4,6 +4,7 @@ html {
 
 body {
   background-color: #021C45;
+  margin: 0;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
@@ -106,8 +107,8 @@ p {
 #menuToggle {
   display: block;
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 18px;
+  right: 32px;
 
   z-index: 1;
 
@@ -179,7 +180,8 @@ p {
 
 #menu {
   position: absolute;
-  width: 300px;
+  width: 100vw;
+  text-align: center;
   margin: -100px 0 0 0;
   padding: 125px 32px 16px 32px;
   border-radius: 2px;
@@ -558,7 +560,7 @@ p {
       color: #021C45;
       font-weight: 300;
       text-transform: uppercase;
-      padding-top: 12px;
+      /*padding-top: 12px;*/
       font-size: 32px;
 }
 
@@ -585,6 +587,9 @@ p {
 }
 
 /*---------navbar-------*/
+#navbar .navbar {
+  align-items: center;
+}
 
 .navbar-portfolio {
 /*  // bottom: 0;*/

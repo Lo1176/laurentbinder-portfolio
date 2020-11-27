@@ -30,7 +30,7 @@ const initLetters = () => {
       delay: 1000
     });
 }
-initLetters();
+// initLetters();
 
 // When the user scrolls down 400px from the top of the document, it shows the scroll button
 window.onscroll = scrollFunction;
