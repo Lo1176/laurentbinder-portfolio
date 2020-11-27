@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: #021C45;
-  margin: 0;
+  margin: 0px -62px 0 0;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
@@ -108,7 +108,7 @@ p {
   display: block;
   position: absolute;
   top: 18px;
-  right: 32px;
+  right: 20px;
 
   z-index: 1;
 
@@ -118,11 +118,11 @@ p {
 
 #menuToggle input {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 38px;
+  height: 36px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: -9px;
+  left: -7px;
 
   cursor: pointer;
 
