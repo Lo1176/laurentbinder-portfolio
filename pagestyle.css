@@ -308,12 +308,12 @@ p {
   width: 82px;
   height: 40px;
   color: #021C45;
-  opacity: 0.9;
+  opacity: 0.7;
   padding: 8px 16px;
 }
 
 .navbar-light a:hover {
-      color: #FFF;
+      color: #021C45;
       opacity: 1;
     }
 
