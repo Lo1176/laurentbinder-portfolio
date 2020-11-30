@@ -7,12 +7,12 @@ body {
   /*margin: 0px -60px 0 0;*/
   margin: 0;
   font-family: "Raleway", "Helvetica", "sans-serif";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #0E0000;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #0E0000 !important;
   text-align: left;
-  background-color: #021C45;
+  background-color: #021C45 !important;
 }
 
 /*@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");*/
@@ -66,7 +66,7 @@ p {
   padding: 200px 0;
   margin-bottom: 56px;
   text-align: center;
-  height: 50vh;
+  height: 80vh;
 }
 .banner .about-me .fa-chevron-down {
   opacity: 0.5;
