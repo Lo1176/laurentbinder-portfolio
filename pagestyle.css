@@ -7,7 +7,8 @@ body {
   margin: 0px -60px 0 0;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+/*@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,100,300,700,500");
 
 h1, h2, h3, h4, p {
   font-family: "Raleway", "Helvetica", "sans-serif";
