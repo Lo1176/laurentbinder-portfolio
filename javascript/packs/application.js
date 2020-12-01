@@ -1,16 +1,3 @@
-// require("@rails/ujs").start()
-// require("@rails/activestorage").start()
-// require("channels")
-
-// import "bootstrap";
-
-// homemade plugins
-// import initLetters from "../plugins/init_letters";
-// import initSrollUp from "../plugins/init_scrollup";
-// import initOpacity from "../plugins/init_opacity";
-// import { init } from 'ityped'
-
-
 // Wrap every letter in a span
 const initLetters = () => {
   var textWrapper = document.querySelector('#mvlt .moving-letters .letters');
@@ -30,7 +17,7 @@ const initLetters = () => {
       delay: 1000
     });
 }
-// initLetters();
+initLetters();
 
 // When the user scrolls down 400px from the top of the document, it shows the scroll button
 window.onscroll = scrollFunction;
@@ -70,5 +57,5 @@ async function firstSlogan(){
   ityped.init(devElement, { loop: false, typeSpeed:  90, startDelay: 1000, backDelay:  1500, disableBackTyping: false, strings: [ 'modernes', 'sur mesure', 'responsive', 'référencés', 'magnifico !', 'sur mesure' ]});
 };
 
-initItyped();
-// firstSlogan();
+// initItyped();
+firstSlogan();
