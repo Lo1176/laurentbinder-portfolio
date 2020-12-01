@@ -47,11 +47,11 @@ const devElement = document.querySelector('#dev')
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-const initItyped = () => {
-  const devElement = document.querySelector('#dev')
+// const initItyped = () => {
+//   const devElement = document.querySelector('#dev')
 
-  ityped.init(devElement, { showCursor: true, startDelay: 20, typeSpeed:  90, backDelay:  500, disableBackTyping: false, strings: ['Création de sites Web modernes ', 'sur mesure', 'responsive', 'référencés', 'Magnifico !' ] });
-}
+//   ityped.init(devElement, { showCursor: true, startDelay: 20, typeSpeed:  90, backDelay:  500, disableBackTyping: false, strings: ['Création de sites Web modernes ', 'sur mesure', 'responsive', 'référencés', 'Magnifico !' ] });
+// }
 async function firstSlogan(){
   await sleep(1000);
   ityped.init(devElement, { loop: false, typeSpeed:  90, startDelay: 1000, backDelay:  1500, disableBackTyping: false, strings: [ 'modernes', 'sur mesure', 'responsive', 'référencés', 'magnifico !', 'sur mesure' ]});
