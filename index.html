@@ -10,6 +10,36 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap');
     </style>
+
+    <style>
+        .ityped-cursor {
+          font-size: 2.2rem;
+          opacity: 1;
+          -webkit-animation: blink 0.3s infinite;
+          -moz-animation: blink 0.3s infinite;
+          animation: blink 0.3s infinite;
+          animation-direction: alternate;
+        }
+
+        @keyframes blink {
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-webkit-keyframes blink {
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-moz-keyframes blink {
+          100% {
+            opacity: 0;
+          }
+        }
+      </style>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -73,6 +103,7 @@
         </div>
         <h1>Full-Stack Web Developer</h1>
         <p>Création de sites Web <span id="dev"></span></p>
+        <script src="https://unpkg.com/ityped@1.0.2"></script>
         <a class="about-me" href="#about-me"><i class="fas fa-chevron-down"></i></a>
       </div>
     </div>
