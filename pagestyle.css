@@ -4,18 +4,11 @@ html {
 
 body {
   background-color: #021C45 !important;
-  /*margin: 0px -60px 0 0;*/
   margin: 0;
   font-family: "Raleway", "Helvetica", "sans-serif" !important;
   background-color: #021C45 !important;
 }
 
-/*@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");*/
-/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap');*/
-
-h1, h2, h3, h4, p {
-  font-family: "Raleway", "Helvetica", "sans-serif";
-}
 a {
   color: #0353A4;
   text-decoration: none;
@@ -667,6 +660,13 @@ p {
     }
     .container {
       padding: 0 !important;
+    }
+    figure.effect-sarah img {
+      max-width: -webkit-fill-available !important;
+      object-fit: cover;
+    }
+    .container-portfolio {
+      margin: 0;
     }
 }
 
