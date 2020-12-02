@@ -405,27 +405,11 @@ p {
       transform: translate3d(0,0,0);
     }
 
-/*details letters*/
-.details-letters {
-  position: relative;
-  font-weight: 900;
-  font-size: 4.5em;
-}
-.details-letters .letters {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  top: 0.3em;
-  right: 0;
-  opacity: 1;
-}
-
 /*footer*/
 .footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*width: 100vw;*/
   height: 100px;
   padding: 0px 16px;
   color:  red;
