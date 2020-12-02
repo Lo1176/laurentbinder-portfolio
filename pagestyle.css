@@ -349,16 +349,16 @@ p {
       }
 
 .container-portfolio .card-portfolio .img-a {
-        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-a.png");
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-a.webp");
 
       }
 
 .container-portfolio .card-portfolio .img-b {
-        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-b.png");
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-b.webp");
       }
 
 .container-portfolio .card-portfolio .img-c {
-        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-c.png");
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url("img-c.webp");
       }
 
 .container-portfolio .card-portfolio .card-img {
