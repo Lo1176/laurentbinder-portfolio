@@ -12,7 +12,6 @@ body {
 
 :root a {
   color: #f54785;
-  /*text-decoration: none;*/
   border-bottom: dotted 1px #f54785;
   padding: 0 1px;
 }
@@ -21,9 +20,6 @@ body {
   color: #ff005b;
   text-decoration: none;
   border-bottom: dotted 1px #ff005b;
-
-
-
 }
 
 
@@ -64,7 +60,7 @@ p {
   text-align: center;
   height: 80vh;
 }
-.banner .about-me .fa-chevron-down {
+.banner #chevron-down .fa-chevron-down {
   opacity: 0.5;
   color: #f54785;
   font-size: 48px;
@@ -77,7 +73,7 @@ p {
   // -moz-transform: rotate(90deg);
   */
 }
-.banner .about-me .fa-chevron-down:hover {
+.banner #chevron-down .fa-chevron-down:hover {
   opacity: 1;
 }
 
