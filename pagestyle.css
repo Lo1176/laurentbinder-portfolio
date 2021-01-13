@@ -103,13 +103,6 @@ p {
   letter-spacing: 4px;
 }
 
-/*.banner a {
-  color: #C4E3FF;
-}
-.banner a:hover {
-  color: #FFF;
-}*/
-
 .container-banner-title {
   height: 10vh;
   letter-spacing: 8px;
@@ -235,94 +228,6 @@ p {
   }
 }
 /* NEW BURGER TO X -----END--*/
-
-/*button navbar */ /* NOT USED ANYMORE */
-.navbar-light .navbar-nav .nav-button {
-  background: none;
-  background: rgba(0,0,0,0.03);
-  display: inline-block;
-  position: relative;
-  border: none;
-  cursor: pointer;
-  margin: 0 16px;
-}
-.navbar-light .navbar-nav .nav-button span::before, span::after {
-  content:"";
-  width:2px;
-  height:0;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #021C45;
-}
-
-.navbar-light .navbar-nav .nav-button::before, .nav-button::after {
-  content:"";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #021C45;
-}
-
-.navbar-light .navbar-nav .nav-button:hover::before, .nav-button:hover::after {
-  width: 100%; /*// always there*/
-  left: 0;
-}
-.navbar-light .navbar-nav .nav-button:hover span::before, .nav-button:hover span::after {
-  height: 100%; /* // always there*/
-  top: 0;
-}
-
-.navbar-light .navbar-nav .nav-button::before {
-  left: 0;
-  top: 0;
-  transition-duration: 0.3s;
-}
-.navbar-light .navbar-nav .nav-button::after {
-  right: 0;
-  bottom: 0;
-  transition-duration: 0.3s;
-}
-
-.navbar-light .navbar-nav .nav-button span::before {
-  left: 0;
-  top: 0;
-  transition-duration: 0.3s;
-}
-.navbar-light .navbar-nav .nav-button span::after {
-  right: 0;
-  bottom: 0;
-  transition-duration: 0.3s;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #021C45;
-  opacity: 0.6;
-  padding: 8px 16px;
-  text-align: center;
-  width: 82px;
-  height: 40px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #021C45;
-  opacity: 1;
-}
-
-
-.navbar-light a {
-  text-align: center;
-  width: 82px;
-  height: 40px;
-  color: #021C45;
-  opacity: 0.7;
-  padding: 8px 16px;
-}
-
-.navbar-light a:hover {
-      color: #021C45;
-      opacity: 1;
-    }
 
 /*card area*/
 .card-area {
