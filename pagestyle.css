@@ -39,6 +39,17 @@ p {
 #about-me {
   text-align: center;
 }
+#about-me a {
+  color: #f54785;
+  border-bottom: dotted 1px #f54785;
+  padding: 0 1px;
+}
+#about-me a:hover {
+  color: #ff005b;
+  text-decoration: none;
+  border-bottom: dotted 1px #ff005b;
+}
+
 #about-me .svg-inline--fa {
   color: #FFF;
   margin: 16px;
@@ -93,12 +104,12 @@ p {
   letter-spacing: 4px;
 }
 
-.banner a {
+/*.banner a {
   color: #C4E3FF;
 }
 .banner a:hover {
   color: #FFF;
-}
+}*/
 
 .container-banner-title {
   height: 10vh;
