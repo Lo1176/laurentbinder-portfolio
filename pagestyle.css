@@ -9,19 +9,28 @@ body {
   background-color: #021C45 !important;
 }
 
-
-:root a {
+/*a link*/
+#what-i-do a {
   color: #f54785;
   border-bottom: dotted 1px #f54785;
   padding: 0 1px;
 }
 
-:root a:hover {
+#what-i-do a:hover {
   color: #ff005b;
   text-decoration: none;
   border-bottom: dotted 1px #ff005b;
 }
-
+#about-me a {
+  color: #f54785;
+  border-bottom: dotted 1px #f54785;
+  padding: 0 1px;
+}
+#about-me a:hover {
+  color: #ff005b;
+  text-decoration: none;
+  border-bottom: dotted 1px #ff005b;
+}
 
 p {
   color: #FFF;
@@ -38,16 +47,6 @@ p {
 /*about me*/
 #about-me {
   text-align: center;
-}
-#about-me a {
-  color: #f54785;
-  border-bottom: dotted 1px #f54785;
-  padding: 0 1px;
-}
-#about-me a:hover {
-  color: #ff005b;
-  text-decoration: none;
-  border-bottom: dotted 1px #ff005b;
 }
 
 #about-me .svg-inline--fa {
