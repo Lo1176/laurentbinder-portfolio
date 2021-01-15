@@ -170,7 +170,7 @@ p {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: $blue;
+  /*background: $blue;*/
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -188,7 +188,7 @@ p {
   width: 100vw;
   text-align: center;
   margin: -100px 0 0 0;
-  padding: 125px 32px 16px 32px;
+  padding: 125px 0 16px 0;
   border-radius: 2px;
   right: -20px;
 
@@ -206,7 +206,12 @@ p {
   padding: 0;
 }
 
+#menu a {
+  color: #021c45;
+  text-decoration: none;
+}
 #menu a:hover {
+  color: #021c45;
   text-decoration: underline !important;
 }
 
