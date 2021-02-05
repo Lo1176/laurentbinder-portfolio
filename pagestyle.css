@@ -3,10 +3,30 @@ html {
 }
 
 body {
-  background-color: #021C45 !important;
+  background: #021C45;
   margin: 0;
   font-family: "Raleway", "Helvetica", "sans-serif" !important;
-  background-color: #021C45 !important;
+}
+
+.card-container {
+   position: relative;
+   width: 100px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 20px;
+   padding: 20px 0;
+}
+
+.card-container .card {
+  position: relative;
+  height: 250px;
+  background: #fff;
+  display: flex;
+  width: 45%;
+  margin: 32px 0;
+  border-radius: 0 4px 16px rgba(0, 0, 0, 0.1);
+
 }
 
 /*a link*/
