@@ -10,7 +10,7 @@ body {
 
 .card-container {
    position: relative;
-   width: 100px;
+   width: 1000px;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -25,10 +25,60 @@ body {
   display: flex;
   width: 45%;
   margin: 32px 0;
-  border-radius: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 0 4px 16px rgba(0,0,0,0.1);
 
 }
 
+.card-container .card .imgBx {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+  transition: 0.5s ease-in-out;
+}
+
+.card-container .card:hover .imgBx {
+  height: 150px;
+  width: 150px;
+  left: -75px;
+  top: calc(50% - 75px);
+}
+
+.card-container .card .imgBx img {
+  max-width: 460px;
+  /*filter: invert(1);*/
+  transition: 0.5s ease-in-out;
+}
+
+.card-container .card:hover .imgBx img {
+  max-width: 160px;
+}
+
+.card-container .card .content {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px); /* - Xpx correspond à left de .imgBx */
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container .card .content h2 {
+  color: #021C45;
+}
 /*a link*/
 #what-i-do a {
   color: #f54785;
