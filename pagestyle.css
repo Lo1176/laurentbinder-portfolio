@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: "Raleway", "Helvetica", "sans-serif" !important;
 }
-
+/* card glassmorphism */
 .card-container {
    position: relative;
    width: 1000px;
@@ -82,7 +82,12 @@ body {
   font-size: 24px;
 }
 
+.card-container .card .content p {
+  color: #021C45;
+}
+
 .card-container .card .content a {
+  color: #fff;
   display: inline-block;
   margin-top: 12px;
   padding: 8px 20px;
@@ -91,8 +96,9 @@ body {
   text-decoration: none;
   color: green;
   font-weight: 500;
-
 }
+/* card glassmorphism END*/
+
 /*a link*/
 #what-i-do a {
   color: #f54785;
@@ -635,11 +641,12 @@ p {
     align-items: center;
   }
   .card-container .card {
-    max-width: 300px;
+    width: 300px;
     height: auto;
     flex-direction: column;
     background: transparent;
     margin: 20px 0;
+    box-shadow: none;
   }
   .card-container .card .imgBx {
     position: relative;
@@ -655,7 +662,21 @@ p {
   .card-container .card:hover .imgBx {
     top: 80px;
   }
+  .card-container .card .imgBx img,
+  .card-container .card:hover .imgBx img {
+    max-width: 100px;
+  }
+  .card-container .card .content {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    box-shadow: none;
+    padding: 20px 40px 40px;
+    border-radius: 20px;
+    border-top: 100px solid #fff;
+  }
 }
+
 @media (min-width: 768px) {
   .burger-to-X, #navbar {
     display: none;
