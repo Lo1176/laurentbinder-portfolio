@@ -252,7 +252,7 @@ p {
       min-width: auto;
       min-height: 320px;
       max-width: 420px;
-      margin: 8px;
+      margin: 8px 8px 32px 8px;
       color: #F4F4F4;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
       display: grid;
