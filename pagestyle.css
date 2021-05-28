@@ -576,6 +576,9 @@ p {
       max-width: -webkit-fill-available !important;
       object-fit: cover;
     }
+    .container-portfolio figure figcaption {
+      padding: 0.5em;
+    }
     .container-portfolio {
       margin: 0;
     }
@@ -634,9 +637,9 @@ p {
 }
 
 .container-portfolio figure h2 {
-  word-spacing: -0.15em;
   text-transform: capitalize;
   font-weight: 300;
+  word-spacing: 0.1em;
 }
 
 .container-portfolio figure h2 span {
