@@ -693,7 +693,7 @@ figure.effect-sarah:hover img {
 
 figure.effect-sarah figcaption {
   text-align: left;
-  filter: drop-shadow(1px 2px 6px black);
+  filter: drop-shadow(0.5px 12px 6px black);
 
 }
 
