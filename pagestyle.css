@@ -213,10 +213,12 @@ p {
 #menu a:hover {
   color: #021c45;
   text-decoration: underline !important;
+  font-weight: 500;
 }
 
 #menu li {
-  padding: 2px 0;
+  padding: 24px 0;
+  font-size: x-large;
 }
 
 #menuToggle input:checked ~ ul {
