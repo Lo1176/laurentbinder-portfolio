@@ -144,10 +144,9 @@ p {
 #menuToggle span {
   display: block;
   width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
+  height: 2px;
+  margin-bottom: 7px;
   position: relative;
-
   background: #021C45;
   border-radius: 3px;
 
@@ -787,7 +786,7 @@ figure.effect-sarah:hover p {
 }
 
 #what-i-do ul.icons-grid li:nth-child(2n + 1) {
-  box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
+  box-shadow: inset -1px 0 0 0 #dddddd, 4px 0 0 0 #dddddd;
 }
 
 #what-i-do .svg-inline--fa {
@@ -806,7 +805,7 @@ figure.effect-sarah:hover p {
     background: #dddddd;
     content: '';
     display: block;
-    height: 2px;
+    height: 4px;
     margin-top: -3em;
     position: absolute;
     width: 100%;
