@@ -1,2 +1,3 @@
 # portfolio-static
-Ma page static
+
+A simple static page to present some of my work.
