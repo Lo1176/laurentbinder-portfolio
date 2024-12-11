@@ -255,7 +255,7 @@ p {
 
 .container-portfolio .card-portfolio {
       min-width: auto;
-      min-height: 320px;
+      height: 320px;
       max-width: 420px;
       margin: 8px 8px 32px 8px;
       color: #F4F4F4;
