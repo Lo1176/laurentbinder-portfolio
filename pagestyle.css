@@ -577,7 +577,7 @@ p {
     .container {
       padding: 0 !important;
     }
-    figure.effect-sarah img {
+    figure.effect-image img {
       max-width: -webkit-fill-available !important;
       object-fit: cover;
     }
@@ -589,7 +589,7 @@ p {
     }
 }
 
-/*----------sarah---------*/
+/*----------image---------*/
 /* Common style */
 .container-portfolio figure {
   position: relative;
@@ -664,10 +664,10 @@ p {
 }
 
 /*---------------*/
-/***** Sarah *****/
+/***** image *****/
 /*---------------*/
 
-figure.effect-sarah {
+figure.effect-image {
   background: #021C45;
   min-width: 420px;
   min-height: 260px;
@@ -675,7 +675,7 @@ figure.effect-sarah {
   border-radius: 2px;
 }
 
-figure.effect-sarah img {
+figure.effect-image img {
   max-width: none;
   width: -webkit-calc(100% + 20px);
   width: calc(100% + 20px);
@@ -688,7 +688,7 @@ figure.effect-sarah img {
   background-position: center;
 }
 
-figure.effect-sarah:hover img {
+figure.effect-image:hover img {
   opacity: 0.4;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -696,19 +696,19 @@ figure.effect-sarah:hover img {
 
 }
 
-figure.effect-sarah figcaption {
+figure.effect-image figcaption {
   text-align: left;
   filter: drop-shadow(0.5px 12px 6px black);
 
 }
 
-figure.effect-sarah h2 {
+figure.effect-image h2 {
   position: relative;
   overflow: hidden;
   padding: 0.5em 0;
 }
 
-figure.effect-sarah h2::after {
+figure.effect-image h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -722,12 +722,12 @@ figure.effect-sarah h2::after {
   transform: translate3d(-100%,0,0);
 }
 
-figure.effect-sarah h2::after {
+figure.effect-image h2::after {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 
-figure.effect-sarah p {
+figure.effect-image p {
   padding: 1em 0;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -736,7 +736,7 @@ figure.effect-sarah p {
   transform: translate3d(100%,0,0);
 }
 
-figure.effect-sarah:hover p {
+figure.effect-image:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
